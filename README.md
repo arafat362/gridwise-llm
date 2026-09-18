@@ -59,7 +59,7 @@ python scripts/validate_optimizer.py
 | `OPENROUTER_BASE_URL` | no | `https://openrouter.ai/api/v1` |
 | `LLM_TIMEOUT_SECONDS` | no | default `20` |
 | `LLM_MAX_RETRIES` | no | default `2` |
-| `LLM_MAX_TOKENS` | no | default `2500` |
+| `LLM_MAX_TOKENS` | no | default `2000` |
 | `APP_PORT` | no | default `8000` |
 
 ---

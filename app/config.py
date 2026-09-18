@@ -21,7 +21,7 @@ class Settings(BaseSettings):
     openrouter_app_name: str = "GridWise-LLM"
     llm_timeout_seconds: float = 20.0
     llm_max_retries: int = 2
-    llm_max_tokens: int = 2500
+    llm_max_tokens: int = 2000
 
 
 @lru_cache
