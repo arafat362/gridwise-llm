@@ -2,8 +2,8 @@
 
 BUP CSE Fest 2026 preliminary — 24-hour campus energy scheduling with LLM note interpretation.
 
-**Live API:** https://hackathon.hishab.de  
-**Health:** https://hackathon.hishab.de/health → `{"status":"ok"}`
+**Live API:** https://hackathon.pqr.bd  
+**Health:** https://hackathon.pqr.bd/health → `{"status":"ok"}`
 
 Endpoints:
 - `GET /health`
@@ -46,7 +46,7 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000
 Checks:
 
 ```bash
-curl https://hackathon.hishab.de/health
+curl https://hackathon.pqr.bd/health
 python scripts/validate_optimizer.py
 ```
 
