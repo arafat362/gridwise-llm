@@ -1,0 +1,17 @@
+services:
+  gridwise:
+    build: .
+    image: gridwise-llm:local
+    ports:
+      - "8000:8000"
+    environment:
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY}
+      OPENROUTER_BASE_URL: ${OPENROUTER_BASE_URL:-https://openrouter.ai/api/v1}
+      OPENROUTER_MODEL: ${OPENROUTER_MODEL:-openai/gpt-4.1}
+      OPENROUTER_SITE_URL: ${OPENROUTER_SITE_URL:-https://fest.bupcopc.tech}
+      OPENROUTER_APP_NAME: ${OPENROUTER_APP_NAME:-GridWise-LLM}
+      LLM_TIMEOUT_SECONDS: ${LLM_TIMEOUT_SECONDS:-20}
+      LLM_MAX_RETRIES: ${LLM_MAX_RETRIES:-2}
+      APP_HOST: 0.0.0.0
+      APP_PORT: 8000
+    # Do not bake secrets into the image; pass at runtime only.

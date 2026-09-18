@@ -1,0 +1,44 @@
+# Secrets & local env
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editors & OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs / temp / media
+*.log
+tmp/
+temp/
+.cache/
+*.mp4
+*.mov
+*.zip
+
+# Docker local overrides
+docker-compose.override.yml
